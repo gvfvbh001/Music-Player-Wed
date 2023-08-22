@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,400;1,500;1,700&display=swap');
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    /*  cố định vị trí không thay đổi khi cuộn trang  */
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+}
+.header img {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(15px);
+    -webkit-filter: blur(50px); 
+}
+
+.container {
+    background-color: #e7e7ee;
+    height: 500px;
+    width: 400px;
+    border-radius: 18px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+.container:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.8);
+}
+.container_img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+    left: 50px;
+    top: -50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.8);
+    transition: all 0.3s ease;
+}
+#song_title{
+    font-size: 26px;
+    text-align: center;
+    margin: 0;
+}
+#author{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.container_music-frame {
+    width: 90%;
+    height: 6px;
+    background-color: #FFFFFFFF;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 40px 20px 10px;
+}
+.container_music-frame-align {
+    background-color: #212121;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.container_music-frame-time {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -26px;
+
+}
+.container_icon{
+    position: relative;
+    left: 20px;
+    top : 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_icon ion-icon {
+    cursor: pointer;
+    font-size: 40px;
+    color: #666;
+    margin-right: 30px;
+    transition: all 0.3s ease;
+    user-select: none; /* ngăn chặn lựa chọn nội dung */
+}
+.play{
+    width: 50px;
+    height: 50px;
+}
+.play:hover{
+    color: #333;
+}
+.forward:hover{
+    color: #333;
+}
+.back:hover{
+    color: #333;
+}
